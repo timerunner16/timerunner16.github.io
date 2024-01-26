@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: radial-gradient(#111111, #111133)
+  }
+  
+  #main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    backdrop-filter: brightness(1.6);
+    width: 8in;
+    height: 4in;
+    border-radius: 0.2in;
+  }
+  
+  p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: ghostwhite;
+    margin:0px;
+    padding:0px;
+  }
+  
+  .help {
+    width:100%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight:200;
+  }
+  
+  #days {
+    left: 16%;
+    top:62%;
+  }
+  
+  #hours {
+    left: 39%;
+    top:62%;
+  }
+  
+  #minutes {
+    left:61%;
+    top:62%;
+  }
+  
+  #seconds {
+    left:84%;
+    top:62%;
+  }
+  
+  #title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 24pt;
+    filter: drop-shadow(0px 0px 1px lightblue);
+  }
+  
+  #time {
+    font-family: monospace;
+    position: absolute;
+    left: 50%;
+    top:30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 0.6in;
+    font-weight: bold;
+    font-size: 80pt;
+    filter: drop-shadow(0px 0px 2px lightblue);
+  }
