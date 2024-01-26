@@ -21,7 +21,7 @@ function startTimer(enddate, display) {
   }
   
   window.onload = function () {
-      var endtime = new Date(2024, 2, 15, 7, 0, 0);
+      var endtime = new Date(2024, 2, 15, 19, 0, 0);
       var display = document.querySelector('#time');
       startTimer(endtime, display);
   };
