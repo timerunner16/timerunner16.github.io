@@ -7,7 +7,7 @@ function startTimer(enddate, display) {
       var diffSeconds = Math.ceil(diffTime / (1000)%60) | 0;
       var diffMinutes = Math.ceil(diffTime / (1000 * 60)%60) | 0;
       var diffHours = Math.ceil(diffTime / (1000 * 60 * 60)%24) | 0;
-      var diffDays = Math.ceil(diffTime / (1000*60*60*24)%365) - 1 | 0;
+      var diffDays = Math.ceil(diffTime / (1000*60*60*24)%365) | 0;
       
       diffSeconds = diffSeconds < 10 ? '0' + diffSeconds : diffSeconds
       diffMinutes = diffMinutes < 10 ? '0' + diffMinutes : diffMinutes
@@ -21,7 +21,7 @@ function startTimer(enddate, display) {
   }
   
   window.onload = function () {
-      var endtime = new Date(2024, 2, 15, 0, 0, 0);
+      var endtime = new Date(2024, 2, 15, 16, 0, 0);
       var display = document.querySelector('#time');
       startTimer(endtime, display);
   };
