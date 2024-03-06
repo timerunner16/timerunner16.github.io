@@ -7,7 +7,7 @@ function startTimer(enddate, display) {
       var diffSeconds = Math.floor(diffTime / (1000)%60) | 0;
       var diffMinutes = Math.floor(diffTime / (1000 * 60)%60) | 0;
       var diffHours = Math.floor(diffTime / (1000 * 60 * 60)%24) | 0;
-      var diffDays = Math.floor(diffTime / (1000*60*60*24)%365) - 1| 0;
+      var diffDays = Math.floor(diffTime / (1000*60*60*24)%365) | 0;
       
       diffSeconds = diffSeconds < 10 ? '0' + diffSeconds : diffSeconds
       diffMinutes = diffMinutes < 10 ? '0' + diffMinutes : diffMinutes
